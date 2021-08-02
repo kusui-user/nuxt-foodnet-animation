@@ -18,3 +18,8 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+npm install node-sass@5.0.0
+npm install sass-loader@10.1.1
+npm install --save-dev @nuxtjs/style-resources
