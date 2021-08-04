@@ -23,3 +23,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 npm install node-sass@5.0.0
 npm install sass-loader@10.1.1
 npm install --save-dev @nuxtjs/style-resources
+
+<!-- スクロールマジックインストール -->
+npm i vue-scrollmagic --save
