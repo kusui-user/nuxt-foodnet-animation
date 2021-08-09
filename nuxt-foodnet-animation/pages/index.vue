@@ -1,14 +1,15 @@
 <template>
-  <div class="page-index">
-    <div class="title-opening">
-      <p id="title">mogumogu...</p>
-    </div>
-    <div class="effect-delay-display">
-      <section>
-     <p>Finished eating!</p>
-      </section>
-    </div>
+ <div>
+  <div class="title-opening">
+    <p id="title">mogumogu...</p>
   </div>
+  <div class="content effect-delay-display">
+    <div class="msg">
+      <p>Finished eating!</p>
+    </div>
+    <div class="tougue-solid icon"><i></i></div>
+  </div>
+</div>
 </template>
 <script>
 import { TweenMax, TimelineMax } from 'gsap'
@@ -58,6 +59,10 @@ body {
   font-family: Helvetica;
 }
 
+.page-index{
+  position: relative;
+}
+
 .content {
   position: absolute;
   top: 50vh;
@@ -95,72 +100,72 @@ body {
     opacity: 1;
   }
 }
-// .tougue-solid.icon {
-//   color: #000;
-//   position: absolute;
-//   margin-left: 2px;
-//   margin-top: 2px;
-//   width: 16px;
-//   height: 16px;
-//   border-radius: 50%;
-//   border: solid 1px currentColor;
-//   background-color: currentColor;
-//   display: inline-block;
-//   margin: 16px;
-// }
+.tougue-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+  background-color: currentColor;
+  display: inline-block;
+  margin: 16px;
+}
 
-// .tougue-solid.icon:before {
-//   content: '';
-//   position: absolute;
-//   left: 4px;
-//   top: 4px;
-//   width: 2px;
-//   height: 2px;
-//   border-radius: 50%;
-//   color: white;
-//   background-color: currentColor;
-// }
+.tougue-solid.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
 
-// .tougue-solid.icon:after {
-//   content: '';
-//   position: absolute;
-//   right: 4px;
-//   top: 4px;
-//   width: 2px;
-//   height: 2px;
-//   border-radius: 50%;
-//   color: white;
-//   background-color: currentColor;
-// }
+.tougue-solid.icon:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  color: white;
+  background-color: currentColor;
+}
 
-// .tougue-solid.icon i {
-//   position: absolute;
-//   left: 4px;
-//   top: 10px;
-//   width: 8px;
-//   height: 1px;
-//   color: white;
-//   background-color: currentColor;
-//   -webkit-transform: rotate(-3deg);
-//           transform: rotate(-3deg);
-// }
+.tougue-solid.icon i {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 8px;
+  height: 1px;
+  color: white;
+  background-color: currentColor;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
 
-// .tougue-solid.icon i:before {
-//   content: '';
-//   position: absolute;
-//   top: -1px;
-//   right: 0px;
-//   width: 2px;
-//   height: 2px;
-//   border-radius: 2px;
-//   color: white;
-//   border-top: solid 1px transparent;
-//   border-right: solid 1px transparent;
-//   border-bottom: solid 1px currentColor;
-//   border-left: solid 1px currentColor;
-//   -webkit-transform: rotate(-45deg);
-//           transform: rotate(-45deg);
-// }
+.tougue-solid.icon i:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: 0px;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  color: white;
+  border-top: solid 1px transparent;
+  border-right: solid 1px transparent;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 
 
 </style>
