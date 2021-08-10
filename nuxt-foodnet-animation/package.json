@@ -16,6 +16,6 @@
     "vue-scrollmagic": "^1.2.0"
   },
   "devDependencies": {
-    "@nuxtjs/style-resources": "^1.2.0"
+    "@nuxtjs/style-resources": "^1.2.1"
   }
 }
