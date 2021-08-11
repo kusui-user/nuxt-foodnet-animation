@@ -1,7 +1,7 @@
 <template>
  <div>
   <div class="title-opening">
-    <p id="title">mogumogu...</p>
+    <p id="title">mogumogu....</p>
   </div>
   <div class="content effect-delay-display">
     <div class="msg">
