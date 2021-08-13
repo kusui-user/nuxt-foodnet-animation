@@ -3,6 +3,7 @@ html {
   // font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
   //   ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
   //   Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
+  font-family: "Palette Mosaic", 'Noto Serif JP', sans-serif;
   font-size: 14px;
   line-height: 2em;
   color: var(--color-font-default);
@@ -27,9 +28,9 @@ select,
 a,
 li {
   font-weight: 400;
-  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
-    ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
+  // font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+  //   ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+  //   Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
   font-size: 14px;
   line-height: 2em;
   color: var(--color-font-default);
@@ -40,12 +41,12 @@ textarea {
   font-size: 16px;
 }
 
-.font-futura {
-  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-    sans-serif;
-}
+// .font-futura {
+//   font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+//     BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+//     "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+//     sans-serif;
+// }
 
 .font-400 {
   font-weight: 400;
@@ -80,10 +81,10 @@ textarea {
 }
 
 h1 {
-  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-    sans-serif;
+  // font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+  //   BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+  //   "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+  //   sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2em;
@@ -110,10 +111,10 @@ h1 {
 }
 
 h2 {
-  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-    sans-serif;
+  // font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+  //   BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+  //   "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+  //   sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2em;
@@ -142,10 +143,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-    sans-serif;
+  // font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+  //   BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+  //   "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+  //   sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2em;

@@ -40,28 +40,20 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    "@nuxtjs/style-resources",
-    [
-      '@nuxtjs/google-fonts',
-      {
-        families: {
-
-          'Noto+Serif+JP': true,
-          Roboto: true,
-          'Reggae+One': true,
-
-
-
-          // Varela: true,
-          // 'Varela+Round': true
-        },
-      }
-    ],
+    "@nuxtjs/style-resources", 
+   
   ],
+
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-webfontloader'
   ],
+  webfontloader: {
+    google: {
+      families: ['Palette+Mosaic']
+    }
+  },
   styleResources: {
     scss: ['@/assets/scss/_colors.scss', '@/assets/scss/_variables.scss'],
   },

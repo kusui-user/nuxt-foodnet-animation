@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div id="title">ABCD</div>
+    <div id="title">ABCD We are friends こんにちは</div>
     <div class="tar"><p class="target">DDDDD</p> </div>
   </div>
 </template>
@@ -63,7 +63,7 @@ export default {
 body {
   background: #fff;
   padding: 20px;
-  font-family: Helvetica;
+  // font-family: Helvetica;
 }
 
 #title {
