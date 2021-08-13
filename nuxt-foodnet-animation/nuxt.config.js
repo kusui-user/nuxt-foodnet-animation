@@ -25,7 +25,7 @@ export default {
     '@/assets/scss/common.scss',
     '@/assets/scss/app.scss',
   ],
-  
+
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -41,6 +41,22 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxtjs/style-resources",
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+
+          'Noto+Serif+JP': true,
+          Roboto: true,
+          'Reggae+One': true,
+
+
+
+          // Varela: true,
+          // 'Varela+Round': true
+        },
+      }
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,5 +71,5 @@ export default {
   },
 
 
- 
+
 }

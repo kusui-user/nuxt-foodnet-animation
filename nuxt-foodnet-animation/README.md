@@ -44,3 +44,6 @@ npm install --save-dev @nuxtjs/style-resources
 
 <!-- スクロールマジックインストール -->
 npm i vue-scrollmagic --save
+
+<!-- google fonts インストール -->
+npm install --save-dev @nuxtjs/google-fonts
