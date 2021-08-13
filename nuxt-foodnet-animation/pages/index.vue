@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="main">
     <div id="title">ABCD</div>
+    <div class="tar"><p class="target">DDDDD</p> </div>
   </div>
 </template>
 <script>
@@ -67,9 +68,26 @@ body {
 
 #title {
   // width: 500px;
-  height: 600px;
+  height: 300px;
+  width: 100%;
   background-color: red;
   text-align: center;
-  line-height: 600px;
+  line-height: 300px;
+}
+
+.tar{
+  height: 300px;
+  width: 100%;
+  background-color: var(--color-bg-black-88);
+  .target{
+    color: red;
+    @include ssat();
+  }
+}
+
+.main{
+  @include mq-target(sm){
+    display: flex;
+  }
 }
 </style>

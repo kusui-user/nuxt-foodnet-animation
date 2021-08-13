@@ -1,3 +1,4 @@
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -20,7 +21,11 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/scss/reset.scss',
+    '@/assets/scss/common.scss',
+    '@/assets/scss/app.scss',
   ],
+  
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -35,11 +40,15 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    "@nuxtjs/style-resources",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
+  styleResources: {
+    scss: ['@/assets/scss/_colors.scss', '@/assets/scss/_variables.scss'],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

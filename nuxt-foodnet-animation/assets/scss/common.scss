@@ -1,0 +1,331 @@
+html {
+  font-weight: 400;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+    ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  color: var(--color-font-default);
+  background-color: var(--color-bg-default);
+}
+
+//  --------------------
+//  Font
+//  --------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+input,
+textarea,
+button,
+select,
+a,
+li {
+  font-weight: 400;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+    ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  color: var(--color-font-default);
+}
+
+input,
+textarea {
+  font-size: 16px;
+}
+
+.font-futura {
+  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+    sans-serif;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-underline {
+  text-decoration: underline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+h1 {
+  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+    sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2em;
+  letter-spacing: 0.12em;
+
+  @include mq(sm) {
+    font-size: 24px;
+  }
+
+  &.page-ttl {
+    position: absolute;
+    top: -78px;
+    width: 100%;
+
+    @include mq(sm) {
+      top: -44px;
+      font-size: 23px;
+    }
+  }
+
+  &.section-ttl {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+    sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2em;
+  letter-spacing: 0.12em;
+
+  @include mq(sm) {
+    font-size: 23px;
+  }
+
+  &.section-ttl {
+    font-size: 24px;
+    line-height: 1.4em;
+    letter-spacing: 0.08em;
+
+    @include mq(sm) {
+      font-size: 20px;
+    }
+  }
+
+  &.section-ttl-small {
+    font-size: 20px;
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
+    BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
+    sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+//  --------------------
+//  Items
+//  --------------------
+// Section
+header,
+footer,
+section,
+.section {
+  position: relative;
+  width: 100%;
+  padding: 0 40px;
+
+  @include mq(md) {
+    padding: 0 26px;
+  }
+
+  > .bg {
+    position: absolute;
+
+    &.bg-cover {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    &.bg-center {
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    &.bg-hide {
+      overflow: hidden;
+    }
+  }
+
+  > .container {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+  }
+
+  &.no-max {
+    padding: 0;
+
+    > .container {
+      max-width: none;
+    }
+  }
+}
+
+img,
+svg,
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+picture {
+  > source,
+  > img {
+    object-fit: cover;
+  }
+}
+
+// Page
+.page {
+  padding-top: 237px;
+  padding-bottom: 88px;
+  overflow: hidden;
+
+  @include mq(md) {
+    padding-top: 200px;
+  }
+
+  @include mq(sm) {
+    padding-top: 132px;
+    padding-bottom: 32px;
+  }
+}
+
+.none {
+  display: none !important;
+}
+
+.event-none {
+  pointer-events: none;
+}
+
+.is-lg {
+  display: none;
+
+  @include mq(lg) {
+    display: inherit;
+  }
+}
+
+.is-no-lg {
+  display: inherit;
+
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+.is-md {
+  display: none;
+
+  @include mq(md) {
+    display: inherit;
+  }
+}
+
+.is-no-md {
+  display: inherit;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.is-sm {
+  display: none;
+
+  @include mq(sm) {
+    display: block;
+  }
+}
+
+.is-no-sm {
+  display: block;
+
+  @include mq(sm) {
+    display: none;
+  }
+}
+
+.is-xs {
+  display: none;
+
+  @include mq(xs) {
+    display: block;
+  }
+}
+
+.is-no-xs {
+  display: block;
+
+  @include mq(xs) {
+    display: none;
+  }
+}
+
+.nuxt-link-exact-active {
+  cursor: default;
+  pointer-events: none;
+}
+
+.page-enter-active {
+  transition: all 2.4s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.page-leave-active {
+  transition: all 0.8s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.page-enter-to,
+.page-leave {
+  opacity: 1;
+}

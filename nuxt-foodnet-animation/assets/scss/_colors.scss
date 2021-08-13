@@ -1,0 +1,34 @@
+:root {
+  --color-main: #000;
+  --color-gray: #8e8e8e;
+  --color-white: #fff;
+
+  // fontのカラー
+  --color-font-default: var(--color-main);
+  --color-font-gray: var(--color-gray);
+  --color-font-white: var(--color-white);
+  --color-font-black-64: rgba(0, 0, 0, .64);
+
+  // iconのカラー
+  --color-icon-default: var(--color-main);
+  --color-icon-black-64: rgba(0, 0, 0, .64);
+
+  // bgのカラー
+  --color-bg-default: var(--color-white);
+  --color-bg-white-64: rgba(255, 255, 255, .64);
+  --color-bg-black: var(--color-main);
+  --color-bg-black-88: rgba(0, 0, 0, .88);
+  --color-bg-black-64: rgba(0, 0, 0, .64);
+  --color-bg-gray: #f0f0f0;
+  --color-bg-gray-dark: var(--color-gray);
+
+  // strokeのカラー
+  --color-stroke-default: var(--color-main);
+  --color-stroke-default-72: rgba(255, 255, 255, .72);
+  --color-stroke-gray: var(--color-gray);
+  --color-stroke-gray-light:#e5e5e5;
+
+  //// ダークモードの時のカラーの変数
+  //@media (prefers-color-scheme: dark) {
+  //}
+}
