@@ -1,9 +1,6 @@
 html {
   font-weight: 400;
-  // font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
-  //   ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-  //   Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
-  font-family: "Palette Mosaic", 'Noto Serif JP', sans-serif;
+  font-family: 'Roboto','Noto Sans JP', sans-serif;
   font-size: 14px;
   line-height: 2em;
   color: var(--color-font-default);
@@ -28,9 +25,6 @@ select,
 a,
 li {
   font-weight: 400;
-  // font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
-  //   ".SFNSDisplay-Regular", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-  //   Helvetica, "游ゴシック  Medium", meiryo, sans-serif;
   font-size: 14px;
   line-height: 2em;
   color: var(--color-font-default);
@@ -41,12 +35,6 @@ textarea {
   font-size: 16px;
 }
 
-// .font-futura {
-//   font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-//     BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-//     "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-//     sans-serif;
-// }
 
 .font-400 {
   font-weight: 400;
@@ -81,16 +69,12 @@ textarea {
 }
 
 h1 {
-  // font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-  //   BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-  //   "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-  //   sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2em;
   letter-spacing: 0.12em;
 
-  @include mq(sm) {
+  @include target600 {
     font-size: 24px;
   }
 
@@ -99,7 +83,7 @@ h1 {
     top: -78px;
     width: 100%;
 
-    @include mq(sm) {
+    @include target600 {
       top: -44px;
       font-size: 23px;
     }
@@ -111,16 +95,12 @@ h1 {
 }
 
 h2 {
-  // font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-  //   BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-  //   "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-  //   sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.2em;
   letter-spacing: 0.12em;
 
-  @include mq(sm) {
+  @include target600 {
     font-size: 23px;
   }
 
@@ -129,7 +109,7 @@ h2 {
     line-height: 1.4em;
     letter-spacing: 0.08em;
 
-    @include mq(sm) {
+    @include target600 {
       font-size: 20px;
     }
   }
@@ -143,10 +123,6 @@ h3,
 h4,
 h5,
 h6 {
-  // font-family: futura-pt, Futura, "Noto Sans JP", -apple-system,
-  //   BlinkMacSystemFont, ".SFNSDisplay-Regular", "Hiragino Sans",
-  //   "Hiragino Kaku Gothic ProN", Helvetica, "游ゴシック  Medium", meiryo,
-  //   sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2em;
@@ -164,7 +140,7 @@ section,
   width: 100%;
   padding: 0 40px;
 
-  @include mq(md) {
+  @include target600 {
     padding: 0 26px;
   }
 
@@ -226,11 +202,11 @@ picture {
   padding-bottom: 88px;
   overflow: hidden;
 
-  @include mq(md) {
+  @include target600 {
     padding-top: 200px;
   }
 
-  @include mq(sm) {
+  @include target600 {
     padding-top: 132px;
     padding-bottom: 32px;
   }
@@ -247,7 +223,7 @@ picture {
 .is-lg {
   display: none;
 
-  @include mq(lg) {
+  @include target600 {
     display: inherit;
   }
 }
@@ -255,7 +231,7 @@ picture {
 .is-no-lg {
   display: inherit;
 
-  @include mq(lg) {
+  @include target600 {
     display: none;
   }
 }
@@ -263,7 +239,7 @@ picture {
 .is-md {
   display: none;
 
-  @include mq(md) {
+  @include target600 {
     display: inherit;
   }
 }
@@ -271,7 +247,7 @@ picture {
 .is-no-md {
   display: inherit;
 
-  @include mq(md) {
+  @include target600 {
     display: none;
   }
 }
@@ -279,7 +255,7 @@ picture {
 .is-sm {
   display: none;
 
-  @include mq(sm) {
+  @include target600 {
     display: block;
   }
 }
@@ -287,7 +263,7 @@ picture {
 .is-no-sm {
   display: block;
 
-  @include mq(sm) {
+  @include target600 {
     display: none;
   }
 }
@@ -295,7 +271,7 @@ picture {
 .is-xs {
   display: none;
 
-  @include mq(xs) {
+  @include target600 {
     display: block;
   }
 }
@@ -303,7 +279,7 @@ picture {
 .is-no-xs {
   display: block;
 
-  @include mq(xs) {
+  @include target600 {
     display: none;
   }
 }

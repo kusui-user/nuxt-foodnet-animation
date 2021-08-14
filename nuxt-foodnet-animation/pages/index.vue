@@ -61,15 +61,15 @@ export default {
 
 <style scoped lang="scss">
 body {
-  background: #fff;
+  background: rgb(238, 26, 26);
   padding: 20px;
-  // font-family: Helvetica;
 }
 
 #title {
   // width: 500px;
   height: 300px;
-  width: 100%;
+  // width: 100%;
+  flex-basis: 70%;
   background-color: red;
   text-align: center;
   line-height: 300px;
@@ -77,17 +77,28 @@ body {
 
 .tar{
   height: 300px;
-  width: 100%;
+  // width: 100%;
+ 
+  flex-basis: 30%;
   background-color: var(--color-bg-black-88);
   .target{
     color: red;
-    @include ssat();
   }
 }
 
 .main{
-  @include mq-target(sm){
+  // width: 100%;
+  @include target600(){
     display: flex;
-  }
+  };
+  @include target1280(){
+    width: 1400px;
+    justify-content: flex-end;
+    & .tar{
+       max-width: 300px;
+    }
+  };
+
+
 }
 </style>

@@ -51,7 +51,7 @@ export default {
   ],
   webfontloader: {
     google: {
-      families: ['Palette+Mosaic']
+      families: ['Roboto','Noto+Sans+JP']
     }
   },
   styleResources: {
