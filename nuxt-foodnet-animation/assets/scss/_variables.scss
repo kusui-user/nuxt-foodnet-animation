@@ -34,18 +34,22 @@
 /* mq-target:指定してメディアクエリのみに適用 */
 @mixin target600() {
   @media screen and ( min-width:600px ) {
+    display: flex;
     @content;
   }
 }
 
 @mixin target960() {
   @media screen and ( min-width:960px ) {
+    
     @content;
   }
 }
 
 @mixin target1280() {
   @media screen and ( min-width:1280px ) {
+    max-width: 1400px;
+    justify-content: center;
     @content;
   }
 }

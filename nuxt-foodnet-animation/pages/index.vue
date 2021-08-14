@@ -89,11 +89,9 @@ body {
 .main{
   // width: 100%;
   @include target600(){
-    display: flex;
   };
   @include target1280(){
-    width: 1400px;
-    justify-content: flex-end;
+    
     & .tar{
        max-width: 300px;
     }
