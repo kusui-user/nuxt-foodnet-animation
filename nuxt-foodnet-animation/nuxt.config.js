@@ -36,12 +36,14 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components/header',
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    "@nuxtjs/style-resources", 
-   
+    "@nuxtjs/style-resources",
+
   ],
 
 
@@ -51,7 +53,7 @@ export default {
   ],
   webfontloader: {
     google: {
-      families: ['Roboto','Noto+Sans+JP']
+      families: ['Roboto', 'Noto+Sans+JP']
     }
   },
   styleResources: {

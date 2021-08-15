@@ -70,6 +70,7 @@ body {
   height: 300px;
   // width: 100%;
   flex-basis: 70%;
+  flex-grow: 1;
   background-color: red;
   text-align: center;
   line-height: 300px;
