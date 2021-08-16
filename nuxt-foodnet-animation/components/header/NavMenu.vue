@@ -21,7 +21,7 @@
           <span class="page-txt">SHOP</span>
         </a>
       </nav>
-      <ListSns />
+      
     </div>
   </aside>
 </template>
@@ -37,6 +37,9 @@ export default {}
   padding: 40px;
   background: var(--color-stroke-default-72);
   backdrop-filter: blur(6px);
+  @include target600() {
+       display: none;
+    }
 
  
 
@@ -47,6 +50,9 @@ export default {}
     width: 100%;
     height: 100%;
     padding: 64px 0 80px;
+    @include target600() {
+       display: none;
+    }
 
     // @include mq(sm) {
     //   justify-content: center;
@@ -63,8 +69,8 @@ export default {}
 
       > .page {
         width: 50%;
-        padding: 12px 20px;
-        font-size: 32px;
+        padding: 10px 16px;
+        font-size: 16px;
         line-height: 1.2em;
         letter-spacing: 0.08em;
 
@@ -104,16 +110,7 @@ export default {}
       }
     }
 
-    > .list {
-      margin-top: 40px;
-      margin-left: 10px;
 
-      // @include mq(sm) {
-      //   @media screen and (max-height: 720px) {
-      //     margin-top: 24px;
-      //   }
-      // }
-    }
   }
 }
 </style>
