@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <DeskNavMenu />
     <NavHeader :class="{ 'header-open': isMenu }" @clickMenu="clickMenu()" />
 
     <transition name="menu">
