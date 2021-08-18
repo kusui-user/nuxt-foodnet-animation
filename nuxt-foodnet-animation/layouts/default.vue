@@ -15,7 +15,7 @@
   .header{
     height: 80vh;
     max-width: 1400px;
-    background: blueviolet;
+    background: transparent;
     
   }
 

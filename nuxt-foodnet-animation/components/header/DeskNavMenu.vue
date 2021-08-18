@@ -33,7 +33,7 @@ export default {}
 <style lang="scss" scoped>
 .desk-nav-menu {
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: none;
   @include target600() {
       justify-content: center;
@@ -45,7 +45,7 @@ export default {}
       > .page {    
         padding: 10px 16px;
         font-size: 16px;
-        color: white;
+        color: rgb(31, 29, 29);
         line-height: 1.2em;
         letter-spacing: 0.08em;
 
@@ -62,7 +62,7 @@ export default {}
             display: block;
             width: 0;
             height: 1px;
-            background-color: white;
+            background-color: rgb(32, 29, 29);
             transition: all 0.24s cubic-bezier(0.11, 0, 0.5, 0);
           }
         }

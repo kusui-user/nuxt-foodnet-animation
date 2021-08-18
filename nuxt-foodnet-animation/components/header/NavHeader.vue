@@ -23,7 +23,7 @@
       height: 76px;
       padding: 0;
       border: none;
-      background-color: blueviolet;
+      background-color:transparent;
 
       &::before,
       &::after {
