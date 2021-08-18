@@ -32,6 +32,10 @@ export default {}
 
 <style lang="scss" scoped>
 .desk-nav-menu {
+  position: absolute;
+  top: 0;
+  z-index: 5000;
+
   width: 100%;
   height: 60px;
   display: none;

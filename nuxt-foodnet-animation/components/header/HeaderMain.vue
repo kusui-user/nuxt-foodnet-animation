@@ -3,7 +3,7 @@
     <div class="c-video">
       <video
         class="c-video__embed"
-        src="~/assets/video/v-sample.mp4"
+        src="~/assets/video/v-sample2.mp4"
         width="1440"
         height="810"
         loop
