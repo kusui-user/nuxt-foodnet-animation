@@ -3,21 +3,18 @@
     <div class="container">
       <nav class="pages" >
         <nuxt-link to="/" class="page">
-          <span class="page-txt">TOP</span>
+          <span class="page-txt">ホーム</span>
         </nuxt-link>
         <nuxt-link to="/about" class="page">
-          <span class="page-txt">ABOUT</span>
+          <span class="page-txt">事業内容</span>
         </nuxt-link>
         <nuxt-link to="/news" class="page">
-          <span class="page-txt">NEWS</span>
-        </nuxt-link>
-        <nuxt-link to="/works" class="page">
-          <span class="page-txt">WORKS</span>
+          <span class="page-txt">会社概要</span>
         </nuxt-link>
         <nuxt-link to="/contact" class="page">
-          <span class="page-txt">CONTACT</span>
+          <span class="page-txt">お問合せ</span>
         </nuxt-link>
-        <a href="https://amity-sensei.stores.jp/" target="_blank" class="page">
+        <a href="https://okazu-ippin.com//" target="_blank" class="page">
           <span class="page-txt">SHOP</span>
         </a>
       </nav>
@@ -49,7 +46,9 @@ export default {}
       > .page {    
         padding: 10px 16px;
         font-size: 16px;
-        color: rgb(31, 29, 29);
+        color: rgb(248, 245, 245);
+        font-weight: 500;
+        text-shadow:1px 1px 1px rgb(9, 9, 9);
         line-height: 1.2em;
         letter-spacing: 0.08em;
 
@@ -66,7 +65,7 @@ export default {}
             display: block;
             width: 0;
             height: 1px;
-            background-color: rgb(32, 29, 29);
+            background-color: rgb(254, 252, 252);
             transition: all 0.24s cubic-bezier(0.11, 0, 0.5, 0);
           }
         }

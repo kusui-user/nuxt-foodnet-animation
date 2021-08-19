@@ -18,13 +18,14 @@
 <style lang="scss" scoped>
 .header-main {
   width: 100%;
-  height: 80vh;
-  background-color: red;
+  height: 100vh;
+  background-color: rgb(29, 26, 26);
   overflow: hidden;
 
-  .c-video{
+  & .c-video{
   position: relative;
   width: 100%;
+  height: 80%;
 
   &__embed{
     display: block;

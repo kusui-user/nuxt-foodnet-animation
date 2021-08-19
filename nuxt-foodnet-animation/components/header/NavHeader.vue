@@ -1,7 +1,7 @@
 <template>
   <header v-bind="$attrs" class="nav-header">
     <div class="container">
-      <nuxt-link to="/" class="logo"> aaa </nuxt-link>
+      <nuxt-link to="/" class="logo">  </nuxt-link>
       <button class="menu" @click="$emit('clickMenu')" />
     </div>
   </header>
@@ -33,7 +33,7 @@
         bottom: 50%;
         width: 32px;
         height: 2px;
-        background-color: var(--color-stroke-default);
+        background-color: white;
         transition: width 0.16s cubic-bezier(0.11, 0, 0.5, 0),
           transform 0.24s cubic-bezier(0.11, 0, 0.5, 0);
       }

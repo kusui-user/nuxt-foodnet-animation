@@ -3,19 +3,16 @@
     <div class="container">
       <nav class="pages" @click="$emit('clickCloseMenu')">
         <nuxt-link to="/" class="page">
-          <span class="page-txt">TOP</span>
+          <span class="page-txt">ホーム</span>
         </nuxt-link>
         <nuxt-link to="/about" class="page">
-          <span class="page-txt">ABOUT</span>
+          <span class="page-txt">事業内容</span>
         </nuxt-link>
         <nuxt-link to="/news" class="page">
-          <span class="page-txt">NEWS</span>
+          <span class="page-txt">会社概要</span>
         </nuxt-link>
         <nuxt-link to="/works" class="page">
-          <span class="page-txt">WORKS</span>
-        </nuxt-link>
-        <nuxt-link to="/contact" class="page">
-          <span class="page-txt">CONTACT</span>
+          <span class="page-txt">お問合せ</span>
         </nuxt-link>
         <a href="https://amity-sensei.stores.jp/" target="_blank" class="page">
           <span class="page-txt">SHOP</span>

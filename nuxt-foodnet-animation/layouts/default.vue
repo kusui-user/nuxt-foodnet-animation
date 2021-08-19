@@ -20,9 +20,12 @@
   }
 
   .footer{
-    height: 10vh;
+    height: 8vh;
     max-width: 1400px;
-    background: rgb(186, 226, 43);
+    background: rgb(10, 10, 10);
+    color: white;
+    text-align: center;
+    line-height: 8vh;
   }
 }
 
