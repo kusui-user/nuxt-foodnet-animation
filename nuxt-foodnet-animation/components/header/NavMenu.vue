@@ -11,7 +11,7 @@
         <nuxt-link to="/news" class="page">
           <span class="page-txt">会社概要</span>
         </nuxt-link>
-        <nuxt-link to="/works" class="page">
+        <nuxt-link to="/contact" class="page">
           <span class="page-txt">お問合せ</span>
         </nuxt-link>
         <a href="https://amity-sensei.stores.jp/" target="_blank" class="page">
