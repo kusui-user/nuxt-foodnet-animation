@@ -51,7 +51,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'nuxt-webfontloader'
+    'nuxt-webfontloader','@nuxtjs/axios',
   ],
   webfontloader: {
     google: {

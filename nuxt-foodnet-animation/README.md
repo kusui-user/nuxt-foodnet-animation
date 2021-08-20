@@ -47,3 +47,6 @@ npm i vue-scrollmagic --save
 
 <!-- google fonts インストール -->
 npm install nuxt-webfontloader
+
+<!-- axios インストール -->
+npm install --save @nuxtjs/axios
