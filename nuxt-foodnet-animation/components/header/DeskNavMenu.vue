@@ -8,7 +8,7 @@
         <nuxt-link to="/about" class="page">
           <span class="page-txt">事業内容</span>
         </nuxt-link>
-        <nuxt-link to="/news" class="page">
+        <nuxt-link to="/company" class="page">
           <span class="page-txt">会社概要</span>
         </nuxt-link>
         <nuxt-link to="/contact" class="page">
@@ -46,7 +46,7 @@ export default {}
       > .page {    
         padding: 10px 16px;
         font-size: 16px;
-        color: rgb(248, 245, 245);
+        color: $color-white;
         font-weight: 500;
         text-shadow:1px 1px 1px rgb(9, 9, 9);
         line-height: 1.2em;
@@ -65,7 +65,7 @@ export default {}
             display: block;
             width: 0;
             height: 1px;
-            background-color: rgb(254, 252, 252);
+            background-color: $color-white;
             transition: all 0.24s cubic-bezier(0.11, 0, 0.5, 0);
           }
         }

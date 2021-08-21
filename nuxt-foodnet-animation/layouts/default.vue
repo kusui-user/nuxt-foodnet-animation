@@ -7,26 +7,23 @@
 </template>
 
 <style lang="scss" scoped>
-.layout-default{
+.layout-default {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 1400px;
 
-  .header{
+  .header {
     height: 80vh;
-    max-width: 1400px;
     background: transparent;
-    
   }
 
-  .footer{
+  .footer {
     height: 8vh;
-    max-width: 1400px;
-    background: rgb(10, 10, 10);
+    background: $color-backbase;
     color: white;
     text-align: center;
     line-height: 8vh;
   }
 }
-
 </style>

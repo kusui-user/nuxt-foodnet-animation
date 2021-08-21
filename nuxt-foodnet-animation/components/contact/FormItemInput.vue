@@ -2,7 +2,7 @@
   <label class="form-item form-item-input">
     <input
       v-bind="$attrs"
-      class="input font-futura"
+      class="input"
       @input="$emit('input', $event.target.value)"
     />
   </label>

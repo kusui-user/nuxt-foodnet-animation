@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contact-main">
     <p class="ttl">お問合せ(*は必須）</p>
     <FormContact />
   </div>
@@ -10,10 +10,15 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.ttl{
-  text-align: center;
-  margin-top: 20px;
-  font-size: 20px;
+.contact-main{
+  background-color: $color-backbase;
+
+  .ttl{
+    color:$color-white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }
 
 </style>

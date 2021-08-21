@@ -19,7 +19,7 @@
 .header-main {
   width: 100%;
   height: 100vh;
-  background-color: rgb(29, 26, 26);
+  background-color: $color-backbase;
   overflow: hidden;
 
   & .c-video{

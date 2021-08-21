@@ -39,7 +39,7 @@
         type="submit"
         :disabled="status === 'success'"
         @click="submitForm()" 
-        >送信</FormItemButton
+        >送信する</FormItemButton
       >
       <div class="msg txt-right">
         <p v-if="status === 'success'" class="msg-txt">Thanks!</p>
@@ -118,16 +118,25 @@ export default {
 <style lang="scss">
 .form-contact {
   position: relative;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  @include target600() {
+      flex-direction: column;
+      width: 70%;
+    }
+  
 
   > .form-item {
     margin-top: 20px;
+    
   }
 
   > .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    // margin: 32px 0;
 
     > .form-item-button {
       display: block;

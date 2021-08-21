@@ -14,7 +14,7 @@ export default {};
 
 <style lang="scss" scoped>
 .form-item-button {
-  width: 100%;
+  width: 60%;
   padding: 14px;
   font-size: 20px;
   line-height: 1.4em;
@@ -25,6 +25,7 @@ export default {};
   background-color: whitesmoke;
   border: none;
   transition: all 0.024s linear;
+  margin: 32px 0;
 
   &:hover {
     background-color: rgb(221, 217, 217);

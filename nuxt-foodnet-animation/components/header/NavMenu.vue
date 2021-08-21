@@ -8,7 +8,7 @@
         <nuxt-link to="/about" class="page">
           <span class="page-txt">事業内容</span>
         </nuxt-link>
-        <nuxt-link to="/news" class="page">
+        <nuxt-link to="/company" class="page">
           <span class="page-txt">会社概要</span>
         </nuxt-link>
         <nuxt-link to="/contact" class="page">
