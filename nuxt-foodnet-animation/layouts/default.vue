@@ -14,12 +14,12 @@
   max-width: 1400px;
 
   .header {
-    height: 80vh;
+    height: 90vh;
     background: transparent;
   }
 
   .footer {
-    height: 8vh;
+    height: 5%;
     background: $color-backbase;
     color: white;
     text-align: center;

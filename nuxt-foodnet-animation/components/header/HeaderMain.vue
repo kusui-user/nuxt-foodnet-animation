@@ -19,13 +19,13 @@
 .header-main {
   width: 100%;
   height: 100vh;
-  background-color: $color-backbase;
-  overflow: hidden;
+  background-color: $color-white;
+  // overflow: hidden;
 
   & .c-video{
   position: relative;
   width: 100%;
-  height: 80%;
+  height: 90%;
 
   &__embed{
     display: block;

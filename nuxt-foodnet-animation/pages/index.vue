@@ -1,103 +1,59 @@
 <template>
   <div class="main">
-    <div id="title">ABCD We are friends こんにちは</div>
-    <div class="tar"><p class="target">DDDDD</p> </div>
+    <div class="main-contents">
+      <div class="main-content">
+        <img src="~/assets/images/product1.jpg" alt="" class="product-pic" />
+      </div>
+      <div class="main-content">
+        <img src="~/assets/images/product2.jpg" alt="" class="product-pic" />
+      </div>
+      <div class="main-content">
+        <img src="~/assets/images/product3.jpg" alt="" class="product-pic" />
+      </div>
+      <div class="main-content">
+        <img src="~/assets/images/product4.jpg" alt="" class="product-pic" />
+      </div>
+    </div>
   </div>
 </template>
-<script>
-// import { TweenMax, TimelineMax } from "gsap";
-export default {
-  middleware: 'midle',
-  mounted() {
-    const timeline = new TimelineMax()
-    timeline
-      .add([
-        TweenMax.to('#title', 1, {
-          css: {
-            background: '#F3FFD8',
-            transition: 'ease',
-          }
-        })
-      ])
-      .to('#title', 1.1, {
-        css: {
-          background: '#E9FFA5',
-        }
-      })
-      .to('#title', 1.2, {
-        css: {
-          background: '#DBFF71',
-        }
-      })
-      .to('#title', 1.3, {
-        css: {
-         background: '#D0FF43',
-        }
-      })
-      .to('#title', 1.4, {
-        css: {
-         background: '#D7EEFF',
-        }
-      })
-      .to('#title', 1.5, {
-        css: {
-         background: '#A7F1FF',
-        }
-      })
-      .to('#title', 1.6, {
-        css: {
-         background: '#60EEFF',
-        }
-      })
-      .to('#title', 1.7, {
-        css: {
-         background: '#00ECFF',
-        }
-      })
 
-  }
-};
-</script>
+<style lang="scss" scoped>
+.main-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-<style scoped lang="scss">
-body {
-  background: rgb(238, 26, 26);
-  padding: 20px;
-}
+  .main-content {
+    flex-basis: 40%;
+    height: 200px;
+    background-color: $color-white;
+    // border: 1px solid;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 
-#title {
-  // width: 500px;
-  height: 300px;
-  // width: 100%;
-  flex-basis: 70%;
-  flex-grow: 1;
-  background-color: red;
-  text-align: center;
-  line-height: 300px;
-}
-
-.tar{
-  height: 300px;
-  // width: 100%;
- 
-  flex-basis: 30%;
-  background-color: var(--color-bg-black-88);
-  .target{
-    color: red;
-  }
-}
-
-.main{
-  // width: 100%;
-  @include target600(){
-  };
-  @include target1280(){
-    
-    & .tar{
-       max-width: 300px;
+    @include target600() {
+      height: 300px;
     }
-  };
+    @include target960() {
+      flex-basis: 20%;
+    }
 
+    &:hover {
+      background-color: rgb(244, 241, 241);
+      .product-pic {
+        opacity: 1;
+      }
+    }
 
+    .product-pic {
+      opacity: 0.8;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 </style>
+

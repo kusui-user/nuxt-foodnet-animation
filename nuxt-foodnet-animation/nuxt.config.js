@@ -39,6 +39,7 @@ export default {
   components: [
     '~/components/header',
     '~/components/contact',
+    '~/components/company',
   
   ],
 
