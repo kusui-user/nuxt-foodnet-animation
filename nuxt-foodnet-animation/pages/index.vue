@@ -2,7 +2,9 @@
   <div class="main">
     <div class="main-contents">
       <div class="main-content">
-        <img src="~/assets/images/product1.jpg" alt="" class="product-pic" />
+        <nuxt-link to="/company">
+          <img src="~/assets/images/product1.jpg" alt="" class="product-pic" />
+        </nuxt-link>
       </div>
       <div class="main-content">
         <img src="~/assets/images/product2.jpg" alt="" class="product-pic" />
