@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <!-- <HeaderMain/> -->
+    <HeaderMain/>
 
     <div class="information">
       <p>お知らせ</p>
@@ -8,7 +8,7 @@
 
     <div class="main-contents">
       <div class="main-content">
-        <nuxt-link to="/company" class="product-pic">
+        <nuxt-link to="/company-content" class="product-pic">
           <div class="link-txt">事業内容</div>
           <img src="~/assets/images/product1.jpg" alt="" class="product-pic" />
         </nuxt-link>
@@ -22,14 +22,14 @@
       </div>
 
       <div class="main-content">
-        <nuxt-link to="/company" class="product-pic">
-          <div class="link-txt">お問合</div>
+        <nuxt-link to="/contact" class="product-pic">
+          <div class="link-txt">お問合せ</div>
           <img src="~/assets/images/product3.jpg" alt="" class="product-pic" />
         </nuxt-link>
       </div>
 
       <div class="main-content">
-        <nuxt-link to="/company" class="product-pic">
+        <nuxt-link to="/online-shop" class="product-pic">
           <div class="link-txt">onlie shop</div>
           <img src="~/assets/images/product4.jpg" alt="" class="product-pic" />
         </nuxt-link>

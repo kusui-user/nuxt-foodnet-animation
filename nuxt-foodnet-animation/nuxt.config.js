@@ -40,6 +40,8 @@ export default {
     '~/components/header',
     '~/components/contact',
     '~/components/company',
+    '~/components/online-shop',
+    '~/components/company-content',
   
   ],
 

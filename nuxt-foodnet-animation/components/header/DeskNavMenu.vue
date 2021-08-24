@@ -5,7 +5,7 @@
         <nuxt-link to="/" class="page">
           <span class="page-txt">ホーム</span>
         </nuxt-link>
-        <nuxt-link to="/about" class="page">
+        <nuxt-link to="/company-content" class="page">
           <span class="page-txt">事業内容</span>
         </nuxt-link>
         <nuxt-link to="/company" class="page">
@@ -14,9 +14,9 @@
         <nuxt-link to="/contact" class="page">
           <span class="page-txt">お問合せ</span>
         </nuxt-link>
-        <a href="https://okazu-ippin.com//" target="_blank" class="page">
-          <span class="page-txt">SHOP</span>
-        </a>
+        <nuxt-link to="/online-shop" class="page">
+          <span class="page-txt">online shop</span>
+        </nuxt-link>
       </nav>
       
     </div>

@@ -7,7 +7,7 @@
       <NavMenu v-show="isMenu" @clickCloseMenu="clickCloseMenu()" />
     </transition>
 
-    <HeaderMain/>
+    <!-- <HeaderMain/> -->
   </div>
 </template>
 
