@@ -64,6 +64,7 @@ export default {};
 
 <style lang="scss" scoped>
 .company {
+  width: 100%;
   background-color: $color-backbase;
   .main-title{
     color: $color-white;

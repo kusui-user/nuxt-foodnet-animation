@@ -29,15 +29,19 @@ export default {}
 
 <style lang="scss" scoped>
 .desk-nav-menu {
-  position: absolute;
+  box-shadow: 1px 1px 10px $color-white;
+  position: fixed;
   top: 0;
   z-index: 5000;
 
   width: 100%;
-  height: 60px;
+  max-width: 1400px;
+  height: 50px;
   display: none;
   @include target600() {
       justify-content: center;
+      background-color: $color-backbase;
+      opacity: 0.8;
     }
   > .container {
     > .pages {

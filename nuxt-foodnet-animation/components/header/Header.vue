@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <DeskNavMenu />
+    <!-- <DeskNavMenu /> -->
     <NavHeader :class="{ 'header-open': isMenu }" @clickMenu="clickMenu()" />
 
     <transition name="menu">
@@ -57,6 +57,7 @@ export default {
     z-index: 6000;
     @include target600() {
        display: none;
+
     }
 }
 

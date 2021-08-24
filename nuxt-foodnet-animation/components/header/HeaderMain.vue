@@ -19,8 +19,7 @@
 .header-main {
   width: 100%;
   height: 100vh;
-  background-color: $color-white;
-  // overflow: hidden;
+ 
 
   & .c-video{
   position: relative;
@@ -34,5 +33,7 @@
     object-fit: cover;
   }
 }
+
+
 }
 </style>
