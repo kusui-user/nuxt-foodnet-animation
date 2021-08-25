@@ -1,7 +1,13 @@
 <template>
   <div class="contact-main">
-    <p class="ttl">お問合せ(*は必須）</p>
+
+    <top-img>
+      <div class="img-txt">お問合せ</div>
+    </top-img>
+
+    <p class="ttl">お問合せフォーム(*は必須）</p>
     <FormContact />
+
   </div>
 </template>
 
@@ -11,10 +17,11 @@ export default {}
 
 <style lang="scss" scoped>
 .contact-main{
-  background-color: $color-backbase;
+  background-color: $color-white;
 
   .ttl{
-    color:$color-white;
+    padding-top: 100px;
+    color:black;
     text-align: center;
     margin-top: 20px;
     font-size: 20px;

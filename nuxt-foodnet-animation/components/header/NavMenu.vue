@@ -5,7 +5,7 @@
         <nuxt-link to="/" class="page">
           <span class="page-txt">ホーム</span>
         </nuxt-link>
-        <nuxt-link to="/company-content" class="page">
+        <nuxt-link to="/content" class="page">
           <span class="page-txt">事業内容</span>
         </nuxt-link>
         <nuxt-link to="/company" class="page">

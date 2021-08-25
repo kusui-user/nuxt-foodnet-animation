@@ -8,7 +8,7 @@
 
     <div class="main-contents">
       <div class="main-content">
-        <nuxt-link to="/company-content" class="product-pic">
+        <nuxt-link to="/content" class="product-pic">
           <div class="link-txt">事業内容</div>
           <img src="~/assets/images/product1.jpg" alt="" class="product-pic" />
         </nuxt-link>

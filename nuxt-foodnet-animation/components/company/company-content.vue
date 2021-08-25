@@ -1,7 +1,5 @@
 <template>
   <div class="company">
-    <p class="main-title">会社概要</p>
-
     <table class="company-table">
       <tbody>
         <tr>
@@ -9,8 +7,8 @@
           <td>株式会社フードネットワーク</td>
         </tr>
         <tr>
-          <th>代表取締役</th>
-          <td>楠井隆志</td>
+          <th>代表</th>
+          <td>楠井 隆志</td>
         </tr>
         <tr>
           <th>所在地</th>
@@ -23,7 +21,7 @@
           <td>03-5362-3252</td>
         </tr>
         <tr>
-          <th>ファックス</th>
+          <th>Fax</th>
           <td>03-6265-6906</td>
         </tr>
         <tr>
@@ -65,48 +63,46 @@ export default {};
 <style lang="scss" scoped>
 .company {
   width: 100%;
-  background-color: $color-backbase;
-  .main-title{
-    color: $color-white;
-    text-align: center;
-  }
+  background-color: $color-white;
+  padding-top: 150px;
+
   .company-table {
-    width: 80%;
+    width: 60%;
     background-color: $color-white;
     margin: 10px auto;
-    // margin: 0;
     margin-bottom: 20px;
-    border-style: 0;
     border-collapse: collapse;
 
     & th {
-      text-align: center;
-      border: 1px solid;
+      text-align: left;
       width: 30%;
-      padding: 15px 0;
+      padding: 20px 0;
       letter-spacing: 0.5em;
     }
 
     & td {
       text-align: left;
       border: 1px solid;
-      padding: 10px 0;
-      // text-indent : 20px;
       padding-left: 7px;
+    }
+    table, td, th{
+      border: none;
+      border-bottom: 1px solid rgb(84, 83, 83);
     }
   }
 
   .map {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    padding: 100px 0;
 
     & map-flame {
       width: 100%;
       text-align: center;
     }
   }
-   .sub-title{
-    color: $color-white;
+  .sub-title {
+    color: $color-backbase;
     text-align: center;
   }
 }

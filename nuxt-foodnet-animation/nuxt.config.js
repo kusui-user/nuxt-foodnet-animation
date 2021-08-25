@@ -42,6 +42,7 @@ export default {
     '~/components/company',
     '~/components/online-shop',
     '~/components/company-content',
+    '~/components/common',
   
   ],
 
