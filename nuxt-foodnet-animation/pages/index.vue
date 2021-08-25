@@ -1,9 +1,31 @@
 <template>
   <div class="main">
-    <HeaderMain/>
+    <HeaderMain />
 
     <div class="information">
-      <p>お知らせ</p>
+      <div class="company">
+        <div class="map">
+          <p class="sub-title">information</p>
+        </div>
+        <table class="company-table">
+          <tbody>
+            <tr>
+              <th>2021年9月</th>
+              <td>ホームページのリニューアル</td>
+            </tr>
+            <tr>
+              <th>2021年8月</th>
+              <td>夏季休暇：8月12日～16日</td>
+            </tr>
+
+
+
+
+          </tbody>
+        </table>
+
+        
+      </div>
     </div>
 
     <div class="main-contents">
@@ -40,10 +62,43 @@
 
 <style lang="scss" scoped>
 .information {
-  width: 100%;
-  height: 200px;
-  border: 1px solid;
-  background-color: wheat;
+  .company {
+    width: 100%;
+    background-color: $color-white;
+    padding-top: 150px;
+
+    .company-table {
+      width: 60%;
+      background-color: $color-white;
+      margin: 10px auto;
+      margin-bottom: 20px;
+      border-collapse: collapse;
+
+      & th {
+        text-align: left;
+        width: 30%;
+        padding: 20px 0;
+        letter-spacing: 0.5em;
+      }
+
+      & td {
+        text-align: left;
+        border: 1px solid;
+        padding-left: 7px;
+      }
+      table,
+      td,
+      th {
+        border: none;
+        border-bottom: 1px dashed rgb(84, 83, 83);
+      }
+    }
+
+    .sub-title {
+      color: $color-backbase;
+      text-align: center;
+    }
+  }
 }
 .main-contents {
   display: flex;
