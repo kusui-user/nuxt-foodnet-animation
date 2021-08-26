@@ -1,7 +1,7 @@
 <template>
   <div class="content-top">
     <top-img>
-      <div class="img-txt">事業内容</div>
+      <div class="img-txt ">事業内容</div>
     </top-img>
 
     <div class="content-main">
@@ -22,7 +22,7 @@
         <p>一般顧客・業者向けの通販サイトの運営</p>
         <p>・祭のおかずや</p>
         <p>・祭のおかずや　楽天市場店</p>
-        <p>・いつもの　</p>
+        <p >・いつもの　</p>
       </div>
 
     </div>

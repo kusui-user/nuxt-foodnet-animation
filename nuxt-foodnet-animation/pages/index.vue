@@ -18,9 +18,6 @@
               <td>夏季休暇：8月12日～16日</td>
             </tr>
 
-
-
-
           </tbody>
         </table>
 
@@ -64,12 +61,12 @@
 .information {
   .company {
     width: 100%;
-    background-color: $color-white;
-    padding-top: 150px;
+    background-color: white;
+    // padding-top: 50px;
 
     .company-table {
       width: 60%;
-      background-color: $color-white;
+      background-color: white;
       margin: 10px auto;
       margin-bottom: 20px;
       border-collapse: collapse;
@@ -78,13 +75,12 @@
         text-align: left;
         width: 30%;
         padding: 20px 0;
-        letter-spacing: 0.5em;
+        letter-spacing: 0.2em;
       }
 
       & td {
         text-align: left;
-        border: 1px solid;
-        padding-left: 7px;
+        padding-left: 5px;
       }
       table,
       td,
@@ -100,6 +96,7 @@
     }
   }
 }
+
 .main-contents {
   display: flex;
   flex-wrap: wrap;

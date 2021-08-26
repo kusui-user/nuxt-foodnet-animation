@@ -120,7 +120,7 @@ export default {
   position: relative;
   width: 90%;
   margin: auto;
-  background-color: rgb(245, 223, 200);
+  background-color: rgb(247, 213, 177);
   @include target600() {
       flex-direction: column;
       width: 70%;

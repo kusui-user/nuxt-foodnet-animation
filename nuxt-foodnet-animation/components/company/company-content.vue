@@ -1,10 +1,10 @@
 <template>
   <div class="company">
-    <table class="company-table">
-      <tbody>
+    <table class="company-table ">
+      <tbody class="target">
         <tr>
           <th>会社名</th>
-          <td>株式会社フードネットワーク</td>
+          <td >株式会社フードネットワーク</td>
         </tr>
         <tr>
           <th>代表</th>
@@ -12,16 +12,16 @@
         </tr>
         <tr>
           <th>所在地</th>
-          <td>
+          <td >
             〒160-0004 東京都新宿区四谷２丁目４-18<br />第３アマシンビル７階
           </td>
         </tr>
         <tr>
-          <th>電話</th>
+          <th >電話</th>
           <td>03-5362-3252</td>
         </tr>
         <tr>
-          <th>Fax</th>
+          <th >Fax</th>
           <td>03-6265-6906</td>
         </tr>
         <tr>
@@ -29,12 +29,12 @@
           <td>2014年1月</td>
         </tr>
         <tr>
-          <th>資本金</th>
+          <th class="fade">資本金</th>
           <td>300万円</td>
         </tr>
         <tr>
-          <th>業種</th>
-          <td>食材及び加工食品の販売、コンサルティング、インターネット販売</td>
+          <th >業種</th>
+          <td >食材及び加工食品の販売、コンサルティング、インターネット販売</td>
         </tr>
       </tbody>
     </table>
@@ -57,7 +57,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  
+
+};
 </script>
 
 <style lang="scss" scoped>
@@ -85,7 +88,9 @@ export default {};
       border: 1px solid;
       padding-left: 7px;
     }
-    table, td, th{
+    table,
+    td,
+    th {
       border: none;
       border-bottom: 1px solid rgb(84, 83, 83);
     }
@@ -105,5 +110,9 @@ export default {};
     color: $color-backbase;
     text-align: center;
   }
+}
+
+.active {
+  font-size: 20px;
 }
 </style>
