@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <!-- <DeskNavMenu  /> -->
     <HeaderMain />
 
     <div class="information">
@@ -17,13 +18,11 @@
               <th>2021年8月</th>
               <td>夏季休暇：8月12日～16日</td>
             </tr>
-
           </tbody>
         </table>
-
-        
       </div>
     </div>
+
 
     <div class="main-contents">
       <div class="main-content">
@@ -56,6 +55,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+
+};
+</script>
 
 <style lang="scss" scoped>
 .information {

@@ -1,7 +1,7 @@
 <template>
   <aside class="desk-nav-menu">
     <div class="container">
-      <nav class="pages" >
+      <nav class="pages">
         <nuxt-link to="/" class="page">
           <span class="page-txt">ホーム</span>
         </nuxt-link>
@@ -17,14 +17,17 @@
         <nuxt-link to="/online-shop" class="page">
           <span class="page-txt">online shop</span>
         </nuxt-link>
+     
       </nav>
-      
     </div>
   </aside>
 </template>
 
 <script>
-export default {}
+export default {
+
+ 
+};
 </script>
 
 <style lang="scss" scoped>
@@ -38,21 +41,21 @@ export default {}
   max-width: 1400px;
   height: 50px;
   display: none;
+  background-color: $color-backbase;
   @include target600() {
-      justify-content: center;
-      background-color: $color-backbase;
-      opacity: 0.8;
-    }
+    justify-content: center;
+    opacity: 0.8;
+  }
   > .container {
     > .pages {
-         display: flex;
-         
-      > .page {    
+      display: flex;
+
+      > .page {
         padding: 10px 16px;
         font-size: 16px;
         color: $color-white;
         font-weight: 500;
-        text-shadow:1px 1px 1px rgb(9, 9, 9);
+        text-shadow: 1px 1px 1px rgb(9, 9, 9);
         line-height: 1.2em;
         letter-spacing: 0.08em;
 
@@ -62,7 +65,7 @@ export default {}
           white-space: nowrap;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             bottom: -3px;
             left: 1px;
@@ -85,8 +88,6 @@ export default {}
         }
       }
     }
-
-
   }
 }
 </style>

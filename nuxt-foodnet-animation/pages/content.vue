@@ -1,5 +1,6 @@
 <template>
   <div class="content-top">
+    <!-- <DeskNavMenu /> -->
     <top-img>
       <div class="img-txt ">事業内容</div>
     </top-img>

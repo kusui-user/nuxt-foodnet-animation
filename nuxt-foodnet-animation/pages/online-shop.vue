@@ -1,5 +1,6 @@
 <template>
   <div class="content-top">
+    <!-- <DeskNavMenu /> -->
     <top-img>
       <div class="img-txt">online shop</div>
     </top-img>
