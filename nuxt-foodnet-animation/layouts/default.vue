@@ -17,28 +17,7 @@
   
 export default {
 
-    mounted() {
-    // const controller = new ScrollMagic.Controller();
-    const scene1 = this.$scrollmagic.scene({
-      triggerElement: ".fade", // トリガーにする要素ID
-      // triggerHook: 0, // トリガーの位置
-      // offset: 100, // 開始するスクロールの位置
-      // duration: 300, // 終了するスクロールの位置
-      // reverse: false, // 反対方向からのスクロールを制御
-    })
-    .setClassToggle(".target", "active") // .activeというクラスを追加・削除を行う
-      // ↓実行されるアニメーションと、対象の要素IDを指定
-      // .setTween(".target", {
-      //   css: {
-      //     opacity : 0, // 透明だったクラスを不透明にして表示
-      //   },
-      // })
-      // ↓triggerのヘルプ表示
-      // .addIndicators({ name: "OK" })
 
-      // controllerに追加
-      this.$scrollmagic.addScene(scene1)
-  },
 };
 </script>
 
