@@ -1,9 +1,9 @@
-<template>
-  <div class="company">
+<template >
+  <div class="company target">
     <table class="company-table ">
-      <tbody class="target">
+      <tbody >
         <tr>
-          <th>会社名</th>
+          <th class="fade">会社名</th>
           <td >株式会社フードネットワーク</td>
         </tr>
         <tr>
@@ -29,7 +29,7 @@
           <td>2014年1月</td>
         </tr>
         <tr>
-          <th class="fade">資本金</th>
+          <th >資本金</th>
           <td>300万円</td>
         </tr>
         <tr>
@@ -39,7 +39,7 @@
       </tbody>
     </table>
 
-    <div class="map">
+    <div class="map ">
       <p class="sub-title">アクセスマップ</p>
 
       <div class="map-flame">
@@ -59,23 +59,20 @@
 <script>
 export default {
       mounted() {
+      const tween = TweenMax.from(".target",1, {x:-5000, ease:"elastic.out(1, 0.3)" });
     // const controller = new ScrollMagic.Controller();
     const scene1 = this.$scrollmagic.scene({
       triggerElement: ".fade", // トリガーにする要素ID
       // triggerHook: 0, // トリガーの位置
-      // offset: 100, // 開始するスクロールの位置
+      // offset: 500, // 開始するスクロールの位置
       // duration: 300, // 終了するスクロールの位置
       // reverse: false, // 反対方向からのスクロールを制御
     })
-    .setClassToggle(".target", "active") // .activeというクラスを追加・削除を行う
-      // ↓実行されるアニメーションと、対象の要素IDを指定
-      // .setTween(".target", {
-      //   css: {
-      //     opacity : 0, // 透明だったクラスを不透明にして表示
-      //   },
-      // })
+    // .setClassToggle(".target", "active") // .activeというクラスを追加・削除を行う
+
+      .setTween(tween)
       // ↓triggerのヘルプ表示
-      // .addIndicators({ name: "OK" })
+      .addIndicators({ name: "OK" })
 
       // controllerに追加
       this.$scrollmagic.addScene(scene1)
