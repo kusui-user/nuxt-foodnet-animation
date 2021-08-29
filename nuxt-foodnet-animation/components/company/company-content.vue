@@ -1,10 +1,10 @@
 <template >
-  <div class="company target">
-    <table class="company-table ">
-      <tbody >
+  <div class="company ">
+    <table class="company-table target">
+      <tbody>
         <tr>
           <th class="fade">会社名</th>
-          <td >株式会社フードネットワーク</td>
+          <td>株式会社フードネットワーク</td>
         </tr>
         <tr>
           <th>代表</th>
@@ -12,16 +12,16 @@
         </tr>
         <tr>
           <th>所在地</th>
-          <td >
+          <td>
             〒160-0004 東京都新宿区四谷２丁目４-18<br />第３アマシンビル７階
           </td>
         </tr>
         <tr>
-          <th >電話</th>
+          <th>電話</th>
           <td>03-5362-3252</td>
         </tr>
         <tr>
-          <th >Fax</th>
+          <th>Fax</th>
           <td>03-6265-6906</td>
         </tr>
         <tr>
@@ -29,17 +29,17 @@
           <td>2014年1月</td>
         </tr>
         <tr>
-          <th >資本金</th>
+          <th>資本金</th>
           <td>300万円</td>
         </tr>
         <tr>
-          <th >業種</th>
-          <td >食材及び加工食品の販売、コンサルティング、インターネット販売</td>
+          <th>業種</th>
+          <td>食材及び加工食品の販売、コンサルティング、インターネット販売</td>
         </tr>
       </tbody>
     </table>
 
-    <div class="map ">
+    <div class="map target-second">
       <p class="sub-title">アクセスマップ</p>
 
       <div class="map-flame">
@@ -58,25 +58,38 @@
 
 <script>
 export default {
-      mounted() {
-      const tween = TweenMax.from(".target",1, {x:-5000, ease:"elastic.out(1, 0.3)" });
-    // const controller = new ScrollMagic.Controller();
-    const scene1 = this.$scrollmagic.scene({
-      triggerElement: ".fade", // トリガーにする要素ID
-      // triggerHook: 0, // トリガーの位置
-      // offset: 500, // 開始するスクロールの位置
-      // duration: 300, // 終了するスクロールの位置
-      // reverse: false, // 反対方向からのスクロールを制御
+
+  mounted() {
+    const tl = new TimelineMax();
+    tl.staggerFrom(".target", 0.5, {
+      x: -3000,
+      ease: Power4.easeOut,
     })
-    // .setClassToggle(".target", "active") // .activeというクラスを追加・削除を行う
+      // 大きくする
+      .staggerFrom(".target-second", 1, {
+        x: 3000,
+        // delay:1,
+      });
+    // // const tween = TweenMax.from(".target",1, {x:-5000, ease:"elastic.out(1, 0.3)" });
+    // // const controller = new ScrollMagic.Controller();
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: ".fade", // トリガーにする要素ID
+    //     // triggerHook: 0, // トリガーの位置
+    //     // offset: 500, // 開始するスクロールの位置
+    //     // duration: 300, // 終了するスクロールの位置
+    //     // reverse: false, // 反対方向からのスクロールを制御
+      })
+    //   // .setClassToggle(".target", "active") // .activeというクラスを追加・削除を行う
 
-      .setTween(tween)
-      // ↓triggerのヘルプ表示
-      .addIndicators({ name: "OK" })
+      .setTween(tl)
+    //   // ↓triggerのヘルプ表示
+      .addIndicators({ name: "OK" });
 
-      // controllerに追加
-      this.$scrollmagic.addScene(scene1)
+    // // controllerに追加
+    this.$scrollmagic.addScene(scene1);
   },
+
 
 };
 </script>
