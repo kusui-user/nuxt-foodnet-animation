@@ -3,7 +3,7 @@
     <!-- <DeskNavMenu  /> -->
     <HeaderMain />
 
-    <div class="information">
+    <div class="information fade">
       <div class="company">
         <div class="map">
           <p class="sub-title">information</p>
@@ -24,29 +24,29 @@
     </div>
 
 
-    <div class="main-contents">
-      <div class="main-content">
+    <div class="main-contents ">
+      <div class="main-content target-one">
         <nuxt-link to="/content" class="product-pic">
           <div class="link-txt">事業内容</div>
           <img src="~/assets/images/product1.jpg" alt="" class="product-pic" />
         </nuxt-link>
       </div>
 
-      <div class="main-content">
+      <div class="main-content target-two">
         <nuxt-link to="/company" class="product-pic">
           <div class="link-txt">会社概要</div>
           <img src="~/assets/images/product2.jpg" alt="" class="product-pic" />
         </nuxt-link>
       </div>
 
-      <div class="main-content">
+      <div class="main-content target-three">
         <nuxt-link to="/contact" class="product-pic">
           <div class="link-txt">お問合せ</div>
           <img src="~/assets/images/product3.jpg" alt="" class="product-pic" />
         </nuxt-link>
       </div>
 
-      <div class="main-content">
+      <div class="main-content target-four">
         <nuxt-link to="/online-shop" class="product-pic">
           <div class="link-txt">onlie shop</div>
           <img src="~/assets/images/product4.jpg" alt="" class="product-pic" />
@@ -58,7 +58,22 @@
 
 <script>
 export default {
+  mounted(){
+    var tm = new TimelineMax();
+    tm.staggerFrom(".target-one",1,{x:-5000, ease:"elastic.out(1, 0.3)"});
+    tm.staggerFrom(".target-two",1,{y:5000, ease:"elastic.out(1, 0.3)"});
+    tm.staggerFrom(".target-three",1,{y:5000, ease:"elastic.out(1, 0.3)"});
+    tm.staggerFrom(".target-four",1,{x:5000, ease:"elastic.out(1, 0.3)"});
+    const scene1 = this.$scrollmagic.scene({
+      triggerElement: ".fade", 
+    })
+    .setTween(tm)
+      // ↓triggerのヘルプ表示
+      .addIndicators({ name: "OK" })
 
+      // controllerに追加
+      this.$scrollmagic.addScene(scene1)
+  }
 };
 </script>
 
