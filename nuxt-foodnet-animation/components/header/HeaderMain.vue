@@ -3,10 +3,10 @@
     <div class="c-video">
       <video
         class="c-video__embed"
-        src="~/assets/video/33365525.mp4"
+        src="~/assets/video/finalmv2vel1.mp4"
         width="1440"
         height="810"
-        loop
+
         autoplay
         muted
         playsinline
