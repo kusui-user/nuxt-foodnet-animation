@@ -1,6 +1,9 @@
 <template>
   <aside class="desk-nav-menu">
     <div class="container">
+      <div class="companylogo">
+        <Svgs />
+      </div>
       <nav class="pages">
         <nuxt-link to="/" class="page">
           <span class="page-txt">ホーム</span>
@@ -24,9 +27,13 @@
 </template>
 
 <script>
+import Svgs from '~/components/Svgs.vue'
+  
 export default {
+ components: {
+    Svgs
+  }
 
- 
 };
 </script>
 
@@ -47,6 +54,7 @@ export default {
     opacity: 0.8;
   }
   > .container {
+    display: flex;
     > .pages {
       display: flex;
 

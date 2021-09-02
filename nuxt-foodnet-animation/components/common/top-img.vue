@@ -33,7 +33,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 0.2em;
   color: white;
   text-shadow: 2px 2px 2px rgb(9, 9, 9);

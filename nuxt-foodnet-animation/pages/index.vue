@@ -23,8 +23,7 @@
       </div>
     </div>
 
-
-    <div class="main-contents ">
+    <div class="main-contents">
       <div class="main-content target-one">
         <nuxt-link to="/content" class="product-pic">
           <div class="link-txt">事業内容</div>
@@ -58,22 +57,29 @@
 
 <script>
 export default {
-  mounted(){
+  mounted() {
     var tm = new TimelineMax();
-    tm.staggerFrom(".target-one",1,{x:-1000, ease:"elastic.out(1, 0.3)"});
-    tm.staggerFrom(".target-two",1,{y:500, ease:"elastic.out(1, 0.3)"});
-    tm.staggerFrom(".target-three",1,{y:500, ease:"elastic.out(1, 0.3)"});
-    tm.staggerFrom(".target-four",1,{x:1000, ease:"elastic.out(1, 0.3)"});
-    const scene1 = this.$scrollmagic.scene({
-      triggerElement: ".fade", 
-    })
-    .setTween(tm)
+    tm.staggerFrom(".target-one", 0.5, { y: 300, ease: "elastic.out(1, 0.3)" });
+    tm.staggerFrom(".target-two", 0.5, { y: 300, ease: "elastic.out(1, 0.3)" });
+    tm.staggerFrom(".target-three", 0.5, {
+      y: 300,
+      ease: "elastic.out(1, 0.3)",
+    });
+    tm.staggerFrom(".target-four", 0.5, {
+      y: 300,
+      ease: "elastic.out(1, 0.3)",
+    });
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: ".fade",
+      })
+      .setTween(tm)
       // ↓triggerのヘルプ表示
-      .addIndicators({ name: "OK" })
+      .addIndicators({ name: "OK" });
 
-      // controllerに追加
-      this.$scrollmagic.addScene(scene1)
-  }
+    // controllerに追加
+    this.$scrollmagic.addScene(scene1);
+  },
 };
 </script>
 
@@ -158,12 +164,15 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 40px;
+        font-size: 25px;
         color: white;
         text-shadow: 2px 2px 2px rgb(9, 9, 9);
         white-space: nowrap;
         z-index: 1000;
         font-weight: 500;
+        @include target600() {
+          font-size: 40px;
+        }
       }
     }
   }

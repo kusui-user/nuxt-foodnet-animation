@@ -1,16 +1,16 @@
 <template>
   <div class="header-main">
     <div class="c-video">
-      <!-- <video
+      <video
         class="c-video__embed"
-        src="~/assets/video/6618406.mp4"
+        src="~/assets/video/Finalmv2vel1.mp4"
         width="1440"
         height="810"
 
         autoplay
         muted
         playsinline
-      ></video> -->
+      ></video>
     </div>
   </div>
 </template>

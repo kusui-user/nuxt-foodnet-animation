@@ -1,5 +1,6 @@
 <template>
   <div class="layout-default">
+    <!-- <Svgs /> -->
     <DeskNavMenu />
 
     <Header />
@@ -13,10 +14,12 @@
 </template>
 
 <script>
-
+import Svgs from '~/components/Svgs.vue'
   
 export default {
-
+ components: {
+    Svgs
+  }
 
 };
 </script>

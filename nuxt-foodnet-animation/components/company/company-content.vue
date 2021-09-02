@@ -62,12 +62,12 @@ export default {
   mounted() {
     const tl = new TimelineMax();
     tl.staggerFrom(".target", 0.5, {
-      x: -3000,
+      y: 300,
       ease: Power4.easeOut,
     })
       // 大きくする
-      .staggerFrom(".target-second", 1, {
-        x: 3000,
+      .staggerFrom(".target-second", 0.5, {
+        y: 300,
         // delay:1,
       });
     // // const tween = TweenMax.from(".target",1, {x:-5000, ease:"elastic.out(1, 0.3)" });
