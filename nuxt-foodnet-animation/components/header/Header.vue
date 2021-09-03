@@ -41,6 +41,7 @@ export default {
     right: 0;
     left: 0;
     z-index: 7000;
+    // width: 100%;
 
     @include target600() {
         display: none;

@@ -1,11 +1,22 @@
 <template>
   <header v-bind="$attrs" class="nav-header">
+ 
     <div class="container">
-      <nuxt-link to="/" class="logo">  </nuxt-link>
+      <nuxt-link to="/" class="logo"><Svgs /> </nuxt-link>
       <button class="menu" @click="$emit('clickMenu')" />
     </div>
   </header>
 </template>
+
+<script>
+import Svgs from "~/components/Svgs.vue";
+
+export default {
+  components: {
+    Svgs,
+  },
+};
+</script>
 
 
 <style lang="scss" scoped>
@@ -23,7 +34,7 @@
       height: 76px;
       padding: 0;
       border: none;
-      background-color:transparent;
+      background-color: transparent;
 
       &::before,
       &::after {

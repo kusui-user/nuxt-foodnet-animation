@@ -2,7 +2,9 @@
   <aside class="desk-nav-menu">
     <div class="container">
       <div class="companylogo">
-        <Svgs />
+        <nuxt-link to="/" >
+          <Svgs />
+        </nuxt-link>
       </div>
       <nav class="pages">
         <nuxt-link to="/" class="page">
@@ -20,20 +22,18 @@
         <nuxt-link to="/online-shop" class="page">
           <span class="page-txt">online shop</span>
         </nuxt-link>
-     
       </nav>
     </div>
   </aside>
 </template>
 
 <script>
-import Svgs from '~/components/Svgs.vue'
-  
-export default {
- components: {
-    Svgs
-  }
+import Svgs from "~/components/Svgs.vue";
 
+export default {
+  components: {
+    Svgs,
+  },
 };
 </script>
 
@@ -50,12 +50,22 @@ export default {
   display: none;
   background-color: $color-backbase;
   @include target600() {
-    justify-content: center;
+    display: block;
+    // justify-content: space-between;
     opacity: 0.8;
   }
   > .container {
     display: flex;
-    > .pages {
+    justify-content: space-between;
+
+    & .companylogo {
+      margin: 0 auto;
+      // line-height: 50px;
+      flex-basis: 20%;
+    }
+
+    & .pages {
+      flex-basis: 70%;
       display: flex;
 
       > .page {
@@ -64,8 +74,8 @@ export default {
         color: $color-white;
         font-weight: 500;
         text-shadow: 1px 1px 1px rgb(9, 9, 9);
-        line-height: 1.2em;
-        letter-spacing: 0.08em;
+        line-height: 1.3em;
+        letter-spacing: 0.04em;
 
         > .page-txt {
           position: relative;

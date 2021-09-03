@@ -1,9 +1,9 @@
 <template>
-  <div class="main">
+  <div class="main fade">
     <!-- <DeskNavMenu  /> -->
     <HeaderMain />
 
-    <div class="information fade">
+    <div class="information ">
       <div class="company">
         <div class="map">
           <p class="sub-title">information</p>

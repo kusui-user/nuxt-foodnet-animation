@@ -5,9 +5,9 @@
 
     <Header />
 
-    <transition >
+    <!-- <transition > -->
       <Nuxt />
-    </transition>
+    <!-- </transition> -->
 
     <Footer />
   </div>

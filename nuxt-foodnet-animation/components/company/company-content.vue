@@ -1,9 +1,9 @@
 <template >
-  <div class="company ">
+  <div class="company fade">
     <table class="company-table target">
       <tbody>
         <tr>
-          <th class="fade">会社名</th>
+          <th >会社名</th>
           <td>株式会社フードネットワーク</td>
         </tr>
         <tr>
