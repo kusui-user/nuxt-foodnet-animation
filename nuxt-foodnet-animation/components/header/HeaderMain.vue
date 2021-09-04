@@ -18,18 +18,22 @@
 <style lang="scss" scoped>
 .header-main {
   width: 100%;
-  height: 100vh;
- 
+  // height: 100%;
+ height: 350px;
+ @include target600() {
+      //  display: none;
+      height: 100%;
+    }
 
   & .c-video{
   position: relative;
   width: 100%;
-  height: 90%;
+  height: 100%;
 
   &__embed{
     display: block;
     width: 100%;
-    height: 100%;
+    height:100%;
     object-fit: cover;
   }
 }

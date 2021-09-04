@@ -75,7 +75,7 @@ export default {
       })
       .setTween(tm)
       // ↓triggerのヘルプ表示
-      .addIndicators({ name: "OK" });
+      // .addIndicators({ name: "OK" });
 
     // controllerに追加
     this.$scrollmagic.addScene(scene1);
@@ -85,6 +85,7 @@ export default {
 
 <style lang="scss" scoped>
 .information {
+  margin-top: 20px;
   .company {
     width: 100%;
     background-color: white;

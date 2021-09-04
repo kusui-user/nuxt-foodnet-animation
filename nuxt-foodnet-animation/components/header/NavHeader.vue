@@ -31,7 +31,7 @@ export default {
       position: relative;
       display: flex;
       width: 76px;
-      height: 76px;
+      height: 45px;
       padding: 0;
       border: none;
       background-color: transparent;
