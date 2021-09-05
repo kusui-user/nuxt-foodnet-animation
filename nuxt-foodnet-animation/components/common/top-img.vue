@@ -1,8 +1,10 @@
 <template>
   <div class="header-main">
-    
     <div class="img-ctn">
-      <slot />
+      <transition name="home">
+        <slot />
+      </transition>
+
       <img src="~/assets/images/home-image.jpg" alt="" class="img-pic" />
     </div>
   </div>
@@ -41,4 +43,26 @@
   z-index: 1000;
   font-weight: 500;
 }
+
+.home-enter {
+  transform: translate(0, -20px);
+  opacity: 0.8;
+}
+.home-enter-to {
+  opacity: 1;
+}
+.home-enter-active {
+  transition: all 1s 0s ease;
+}
+// .home-leave {
+//   transform: translate(0, 0);
+//   opacity: 1;
+// }
+// .home-leave-to {
+//   transform: translate(0, 20px);
+//   opacity: 0;
+// }
+// .home-leave-active {
+//   transition: all .5s 0s ease;
+// }
 </style>
