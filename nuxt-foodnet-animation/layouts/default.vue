@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout-default {
+  margin: 0 auto;
   position: relative;
   min-height: 100vh;
   max-width: 1400px;

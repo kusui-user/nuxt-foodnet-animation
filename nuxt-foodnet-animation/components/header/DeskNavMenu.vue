@@ -59,6 +59,7 @@ export default {
     justify-content: space-between;
 
     & .companylogo {
+      padding-top: 6px;
       margin: 0 auto;
       // line-height: 50px;
       flex-basis: 20%;
@@ -69,13 +70,17 @@ export default {
       display: flex;
 
       > .page {
-        padding: 10px 16px;
-        font-size: 16px;
+        padding: 16px 6px 0px 24px;
+        font-size: 13px;
         color: $color-white;
         font-weight: 500;
         text-shadow: 1px 1px 1px rgb(9, 9, 9);
         line-height: 1.3em;
         letter-spacing: 0.04em;
+        @include target960(){
+          font-size: 17px;
+          padding: 16px auto
+        }
 
         > .page-txt {
           position: relative;
