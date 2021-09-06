@@ -1,6 +1,7 @@
 <template>
   <div class="header-main">
     <div class="img-ctn">
+
       <transition name="home">
         <slot />
       </transition>
@@ -46,7 +47,7 @@
 
 .home-enter {
   transform: translate(0, -20px);
-  opacity: 0.8;
+  opacity: 0.2;
 }
 .home-enter-to {
   opacity: 1;
