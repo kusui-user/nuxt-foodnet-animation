@@ -5,7 +5,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-foodnet-animation',
+    title: '株式会社フードネットワーク',
     htmlAttrs: {
       lang: 'en'
     },
