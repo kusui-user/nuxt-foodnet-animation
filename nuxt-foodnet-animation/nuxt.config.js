@@ -2,12 +2,13 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  Target: static,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: '株式会社フードネットワーク',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
