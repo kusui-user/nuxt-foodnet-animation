@@ -3,7 +3,7 @@
     <div class="c-video">
       <video
         class="c-video__embed"
-        src="~/assets/video/Finalmv2vel1.mp4"
+        <!-- src="~/assets/video/Finalmv2vel1.mp4" -->
         width="1440"
         height="810"
 
