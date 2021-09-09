@@ -1,1 +1,0 @@
-nuxt-foodnet-animation
