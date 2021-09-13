@@ -15,6 +15,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  data(){
+    return{
+      url:"~/assets/video/Finalmv2vel1.mp4"
+    }
+  },
+  watch:{
+    url : function(){
+      console.log('OK!!!!!!!!!');
+      // this.$nuxt.$loading.start();
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .header-main {
   width: 100%;
