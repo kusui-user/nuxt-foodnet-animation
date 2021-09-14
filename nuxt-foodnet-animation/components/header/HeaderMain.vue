@@ -3,10 +3,9 @@
     <div class="c-video">
       <video
         class="c-video__embed"
-        src="~/assets/video/Finalmv2vel1.mp4"
+        :src="url"
         width="1440"
         height="810"
-
         autoplay
         muted
         playsinline
@@ -16,44 +15,55 @@
 </template>
 
 <script>
+
 export default {
-  data(){
-    return{
-      url:"~/assets/video/Finalmv2vel1.mp4"
-    }
+   mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 50000)
+    })
   },
-  watch:{
-    url : function(){
-      console.log('OK!!!!!!!!!');
+   loading: {
+    color: 'blue',
+    height: '5px'
+  },
+
+  data() {
+    return {
+      url: require("~/assets/video/Finalmv2vel1.mp4"),
+    };
+  },
+  watch: {
+    url: function (val, oldVal) {
+      console.log(val);
       // this.$nuxt.$loading.start();
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .header-main {
   width: 100%;
   // height: 100%;
- height: 350px;
- @include target600() {
-      //  display: none;
-      height: 100%;
-    }
-
-  & .c-video{
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  &__embed{
-    display: block;
-    width: 100%;
-    height:100%;
-    object-fit: cover;
+  height: 350px;
+  @include target600() {
+    //  display: none;
+    height: 100%;
   }
-}
 
+  & .c-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
 
+    &__embed {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 </style>
