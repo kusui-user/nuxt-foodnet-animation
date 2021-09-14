@@ -25,6 +25,7 @@ export default {
     })
   },
    loading: {
+    continuous:true,
     color: 'blue',
     height: '5px'
   },
@@ -34,12 +35,7 @@ export default {
       url: require("~/assets/video/Finalmv2vel1.mp4"),
     };
   },
-  watch: {
-    url: function (val, oldVal) {
-      console.log(val);
-      // this.$nuxt.$loading.start();
-    },
-  },
+
 };
 </script>
 
