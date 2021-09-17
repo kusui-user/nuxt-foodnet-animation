@@ -16,8 +16,10 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      
+    ],
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -32,7 +34,7 @@ export default {
   plugins: [
     {
       src: '~/plugins/vue-scrollmagic.js',
-      ssr: false
+      ssr: false,
     }
   ],
 
