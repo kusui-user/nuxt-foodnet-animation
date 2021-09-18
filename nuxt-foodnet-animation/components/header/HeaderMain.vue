@@ -17,6 +17,11 @@
 
 <script>
 export default {
+  Create() {
+    this.$nuxt.$loading.start();
+
+    setTimeout(() => this.$nuxt.$loading.finish(), 2000);
+  },
   mounted() {
     this.$nuxt.$loading.start();
 
