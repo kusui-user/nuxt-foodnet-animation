@@ -2,7 +2,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-  // target: 'static',
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -52,6 +52,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxtjs/style-resources",
+   
 
   ],
 
@@ -59,6 +60,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-webfontloader','@nuxtjs/axios',
+    
   ],
   webfontloader: {
     google: {
@@ -73,8 +75,6 @@ export default {
   build: {
   },
 
-
-
-
+  loading: './components/Loading.vue',
 
 }

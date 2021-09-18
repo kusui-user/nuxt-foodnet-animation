@@ -9,24 +9,18 @@
         autoplay
         muted
         playsinline
+        v-on:load="load"
       ></video>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
-   mounted() {
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start()
+  mounted() {
+    this.$nuxt.$loading.start();
 
-      setTimeout(() => this.$nuxt.$loading.finish(), 50000)
-    })
-  },
-   loading: {
-    color: 'blue',
-    height: '5px'
+    setTimeout(() => this.$nuxt.$loading.finish(), 2000);
   },
 
   data() {
@@ -34,10 +28,11 @@ export default {
       url: require("~/assets/video/Finalmv2vel1.mp4"),
     };
   },
-  watch: {
-    url: function (val, oldVal) {
-      console.log(val);
-      // this.$nuxt.$loading.start();
+  methods: {
+    // ※4
+    load: function () {
+      console.log("loaded");
+      this.$nuxt.$loading.finish();
     },
   },
 };
@@ -66,6 +61,4 @@ export default {
     }
   }
 }
-
-
 </style>

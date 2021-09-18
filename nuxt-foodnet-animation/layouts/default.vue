@@ -19,7 +19,8 @@ import Svgs from '~/components/Svgs.vue'
 export default {
  components: {
     Svgs
-  }
+  },
+
 
 };
 </script>
