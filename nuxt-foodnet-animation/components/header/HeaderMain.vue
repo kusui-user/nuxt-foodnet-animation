@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  Create() {
+  beforeCreate() {
     this.$nuxt.$loading.start();
 
     setTimeout(() => this.$nuxt.$loading.finish(), 2000);
