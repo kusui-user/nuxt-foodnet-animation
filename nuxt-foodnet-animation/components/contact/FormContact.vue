@@ -7,31 +7,31 @@
     <FormItemInput
       v-model="form.name"
       placeholder="お名前*"
-      name="entry.465948602"
+      name="${process.env.NAME}"
       required
     />
     <FormItemInput
       v-model="form.email"
       type="email"
       placeholder="メールアドレス*"
-      name="entry.2080153569"
+      name="${process.env.EMAIL}"
       required
     />
     <FormItemInput
       v-model="form.tel"
       type="tel"
       placeholder="電話番号"
-      name="entry.1340815702"
+      name="${process.env.TEL}"
     />
     <FormItemInput
       v-model="form.title"
       placeholder="タイトル"
-      name="entry.1572972724"
+      name="${process.env.TITLE}"
     />
     <FormItemInput
       v-model="form.message"
       placeholder="メッセージ*"
-      name="entry.1631956001"
+      name="${process.env.MESSAGE}"
       required
     />
     <div class="btn">
@@ -70,11 +70,11 @@ export default {
       formInfo: {
         action:
           "https://docs.google.com/forms/u/0/d/e/1FAIpQLSej_yb3xaorggDzZxJZIyy_Al2NDH05FnV0Y1Fs7yf8YyxuJw/formResponse",
-        name: "entry.465948602",
-        email: "entry.2080153569",
-        tel: "entry.1340815702",
-        title: "entry.1572972724",
-        message: "entry.1631956001",
+        name: "${process.env.NAME}",
+        email: "${process.env.EMAIL}",
+        tel: "${process.env.TEL}",
+        title: "${process.env.TITLE}",
+        message: "${process.env.MESSAGE}",
       },
     };
   },

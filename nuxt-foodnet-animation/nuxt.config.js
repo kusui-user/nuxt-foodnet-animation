@@ -1,6 +1,10 @@
+require('dotenv').config();
+const{NAME,EMAIL,TEL,TITLE,MESSAGE} = process.env;
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+ 
+
   ssr: false,
   target: 'static',
 
@@ -60,7 +64,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-webfontloader','@nuxtjs/axios',
-    
+    '@nuxtjs/dotenv',
   ],
   webfontloader: {
     google: {
@@ -76,6 +80,14 @@ export default {
   },
 
   loading: './components/Loading.vue',
+
+  env:{
+    NAME,
+    EMAIL,
+    TEL,
+    TITLE,
+    MESSAGE,
+  }
 
 
 }
