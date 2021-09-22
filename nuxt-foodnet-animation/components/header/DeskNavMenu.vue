@@ -2,7 +2,7 @@
   <aside class="desk-nav-menu">
     <div class="container">
       <div class="companylogo">
-        <nuxt-link to="/" >
+        <nuxt-link to="/">
           <Svgs />
         </nuxt-link>
       </div>
@@ -21,6 +21,9 @@
         </nuxt-link>
         <nuxt-link to="/online-shop" class="page">
           <span class="page-txt">online shop</span>
+        </nuxt-link>
+        <nuxt-link to="/sample" class="page">
+          <span class="page-txt">sample</span>
         </nuxt-link>
       </nav>
     </div>
@@ -77,9 +80,9 @@ export default {
         text-shadow: 1px 1px 1px rgb(9, 9, 9);
         line-height: 1.3em;
         letter-spacing: 0.04em;
-        @include target960(){
+        @include target960() {
           font-size: 17px;
-          padding: 16px auto
+          padding: 16px auto;
         }
 
         > .page-txt {

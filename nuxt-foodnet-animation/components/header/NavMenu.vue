@@ -17,6 +17,7 @@
         <nuxt-link to="/online-shop" class="page">
           <span class="page-txt">online-shop</span>
         </nuxt-link>
+      
      
       </nav>
       

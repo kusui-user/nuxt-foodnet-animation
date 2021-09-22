@@ -41,8 +41,8 @@ export default {
   mounted(){
     var tm = new TimelineMax();
     tm.staggerFrom(".target-seven",0.5,{y: 300, ease:"elastic.out(1, 0.3)"});
-    tm.staggerFrom(".target-eight",0.5,{y: 300, ease:"elastic.out(1, 0.3)"});
-    tm.staggerFrom(".target-nine",0.5,{y: 300, ease:"elastic.out(1, 0.3)"});
+    tm.staggerFrom(".target-eight",0.8,{y: 300, ease:"elastic.out(1, 0.3)"});
+    tm.staggerFrom(".target-nine",0.8,{y: 300, ease:"elastic.out(1, 0.3)"});
     const scene1 = this.$scrollmagic.scene({
       triggerElement: ".fade-three", 
     })
