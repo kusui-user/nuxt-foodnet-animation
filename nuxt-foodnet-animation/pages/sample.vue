@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import gsap from 'gsap';
+
 export default {
   mounted() {
   // let controller = new ScrollMagic.Controller();
@@ -47,7 +49,8 @@ export default {
     triggerHook: 1,
     offset: 250,
   })
-    .to(".copy__t",1,
+   .on("enter", function (event) {
+      gsap.fromTo(".copy__t",
         { //初期状態
           opacity: 0,
           scale: 5,
@@ -55,11 +58,24 @@ export default {
           x: 150,
           y: -100,
         },
-  
+        {　//完了状態
+          duration: 0.1,//アニメーションの長さ
+          opacity: 1,　//透明度
+          scale: 1,　//大きさ,
+          rotation: 0, //回転
+          x: 0,
+          y: 0,
+          ease: "power4.out",
+          stagger: { //それぞれの開始時間をずらせる
+            from: "start",　//左側から
+            amount: 1.3　//1.3秒おきに
+          }
+        },
       )
+     })
     
     // .addIndicators()
-    .reverse(false)
+    // .reverse(false)
     // .addTo(controller);
     // controllerに追加
     this.$scrollmagic.addScene(scene);
@@ -82,7 +98,7 @@ export default {
   .copy__t {
     font-size: 80px;
     font-weight: bold;
-    opacity: 1;
+    opacity: 0;
     display: inline-block;
     color: red;
   }
