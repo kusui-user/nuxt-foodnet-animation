@@ -5,6 +5,8 @@
       <div class="img-txt">sample</div>
     </top-img>
 
+    
+
     <div class="content-main target-seven">
       <div class="content-main-one">
         <div class="copy" id="trigger">
@@ -38,41 +40,40 @@
 </template>
 
 <script>
-import gsap from 'gsap';
-
 export default {
   mounted() {
-  // let controller = new ScrollMagic.Controller();
+
+  const tm2 = TweenMax.staggerFromTo(".copy__t",0.1,
+  {
+    opacity: 0,
+    scale: 5,
+    rotation: 10,
+    x: 150,
+    y: -100,
+  },
+  {
+    duration: 0.1,//アニメーションの長さ
+    opacity: 1,　//透明度
+    scale: 1,　//大きさ,
+    rotation: 0, //回転
+    x: 0,
+    y: 0,
+    ease: "power4.out",
+    stagger: { //それぞれの開始時間をずらせる
+    from: "start",　//左側から
+    amount: 1.3　//1.3秒おきに
+    }
+  }
+  );
+
 
   const scene = this.$scrollmagic.scene({
     triggerElement: "#trigger",
     triggerHook: 1,
     offset: 250,
   })
-   .on("enter", function (event) {
-      gsap.fromTo(".copy__t",
-        { //初期状態
-          opacity: 0,
-          scale: 5,
-          rotation: 10,
-          x: 150,
-          y: -100,
-        },
-        {　//完了状態
-          duration: 0.1,//アニメーションの長さ
-          opacity: 1,　//透明度
-          scale: 1,　//大きさ,
-          rotation: 0, //回転
-          x: 0,
-          y: 0,
-          ease: "power4.out",
-          stagger: { //それぞれの開始時間をずらせる
-            from: "start",　//左側から
-            amount: 1.3　//1.3秒おきに
-          }
-        },
-      )
-     })
+  .setTween(tm2)
+
     
     // .addIndicators()
     // .reverse(false)
@@ -95,12 +96,14 @@ export default {
 
   }
 
+
   .copy__t {
     font-size: 80px;
     font-weight: bold;
     opacity: 0;
     display: inline-block;
-    color: red;
+    line-height: 1.5em;
+
   }
 }
 </style>
