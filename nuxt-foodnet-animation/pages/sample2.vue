@@ -8,7 +8,8 @@
     <div class="content-main target-seven">
       <div class="content-main-one">
         <div id="fv_wap" class="fv_wap">
-          <div class="fv_slide"></div>
+          <div class="fv_slide fv_slide_left"></div>
+          <div class="fv_slide fv_slide_right"></div>
           <a id="fv_slide_inner" class="fv_slide_inner" href="#">
             <figure id="fv_slide_fig" class="fv_slide_fig">
               <img
@@ -26,14 +27,20 @@
 </template>
 
 <script>
-import gsap from 'gsap'
+import gsap from "gsap";
 export default {
   mounted() {
-   gsap.to(".fv_slide", 0.8, {
-  width: "120%",
-  left: "120%",
+    gsap.to(".fv_slide_left", 0.8, {
+  left: "-100%",
   delay: 0.4,
-  ease: Expo.ease
+  ease: Power1.easeOut
+});
+gsap.to(".fv_slide_right", 0.4, {
+  //width: "0%",
+  left: "100%",
+  width: 0,
+  delay: 0.4,
+  ease: Power1.easeOut
 });
 gsap.to(".fv_slide_fig", 0.6, {
   opacity: 1,
@@ -47,13 +54,13 @@ gsap.to(".fv_slide_item", 0.25, {
   opacity: 1,
   delay: 0.4,
   ease: Expo.ease
+  //ease: Expo.ease
 });
-// gsap.to(".fv_slide_item img", 0.25, {
-//   filter: "grayscale(0%)",
-//   delay: 0.85,
-//   ease: Expo.ease
-// });
-   
+gsap.to(".fv_slide_item img", 0.25, {
+  filter: "grayscale(0%)",
+  delay: 0.85,
+  ease: Expo.ease
+});
   },
 };
 </script>
@@ -68,39 +75,41 @@ gsap.to(".fv_slide_item", 0.25, {
     margin: 80px 0;
   }
 
-  #fv_wap {
+ #fv_wap {
   position: relative;
   width: 55vw;
   height: 30vw;
   overflow: hidden;
   margin: 0 auto;
 }
-
 .fv_slide {
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 30vw;
   top: 0;
-  left: -100%;
-  z-index: 3;
-  background-color: black;
-  opacity: 1;
+  background-color: rgba(0, 0, 0, 1);
 }
-
+.fv_slide_left {
+  background: #333;
+  z-index: 4;
+  left: 0;
+}
+.fv_slide_right {
+  background: #333;
+  z-index: 3;
+  right: 0;
+}
 .fv_slide_inner {
   display: block;
-  height: 100%;
+  height: 100%; //
 }
-
 .fv_slide_fig {
   height: 100%;
   opacity: 0;
 }
-
 .fv_slide_inner:hover img {
   filter: grayscale(0%);
 }
-
 .fv_slide_item_wap {
   position: absolute;
   top: 0;
@@ -108,14 +117,13 @@ gsap.to(".fv_slide_item", 0.25, {
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: all 0.6s ease 0s;
 }
-
 .fv_slide_item {
   padding: 2% 5%;
   margin: 0 auto;
@@ -125,11 +133,10 @@ gsap.to(".fv_slide_item", 0.25, {
   text-align: center;
   transition: all 0.6s ease 0s;
   font-size: 2vw;
-  transform: scale(1.1, 1.1);
 }
-
 .fv_slide_inner:hover .fv_slide_item {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1, 1.1);
 }
 }
 </style>
