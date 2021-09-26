@@ -22,7 +22,7 @@
         <nuxt-link to="/online-shop" class="page">
           <span class="page-txt">online shop</span>
         </nuxt-link>
-        <nuxt-link to="/sample2" class="page">
+        <nuxt-link to="/sample3" class="page">
           <span class="page-txt">sample</span>
         </nuxt-link>
       </nav>
