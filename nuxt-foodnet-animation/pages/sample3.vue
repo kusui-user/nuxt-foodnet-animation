@@ -30,11 +30,11 @@ export default {
     const scene = this.$scrollmagic.scene({
       triggerElement: ".data-item.ratio",
     })
-    .on("enter", function (event) {
+    this.secne.on("enter", function (event) {
       $(".data-item.ratio .ratioImg").addClass("active");
     });
- 
     this.$scrollmagic.addScene(scene);
+ 
   },
 };
 </script>
