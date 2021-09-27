@@ -25,13 +25,18 @@
 <script>
 export default {
   mounted() {
-
-
+    
+    
     const scene = this.$scrollmagic.scene({
       triggerElement: ".data-item.ratio",
     })
-    this.secne.on("enter", function (event) {
-      $(".data-item.ratio .ratioImg").addClass("active");
+    .on("enter", function (event) {
+      const ratioImgs = document.querySelectorAll('.ratioImg');
+      ratioImgs.forEach(ratioImg =>{
+
+        ratioImg.classList.add("active");
+      })
+
     });
     this.$scrollmagic.addScene(scene);
  
@@ -46,7 +51,7 @@ export default {
   text-align: left;
 
   .content-main-one {
-    margin: 80px 0;
+    margin: 180px 0;
   }
 
   .block_img {
